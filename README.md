@@ -7,7 +7,7 @@ This project is an example of a simple pagination directive.
 1. Add pagination-directive.html and pagination-directive.js to your Angular project.
 2. From the controller where you want to use the pagination directive, initialize the following $scope variables:
  
- This variable defines the maximum number of elements you want to show in the list which is related to the pagination
+ This variable defines the maximum number of elements you want to show in the table, which is related to the pagination panel
  - `$scope.maxInList = 10`
 
  This variable defines the total number of pages in your navigation panel  
