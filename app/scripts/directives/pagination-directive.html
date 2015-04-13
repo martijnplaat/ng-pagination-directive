@@ -1,0 +1,15 @@
+<ul class="pagination">
+    <li>
+        <a ng-click="previous()" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+        </a>
+    </li>
+    <li ng-repeat="page in rangeNavigation(beginPage)">
+        <a class="pagination-link" ng-class="whichClass(page)" ng-click="setNewPage(page)">{{page}}</a>
+    </li>
+    <li>
+        <a ng-click="next()" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+        </a>
+    </li>
+</ul>

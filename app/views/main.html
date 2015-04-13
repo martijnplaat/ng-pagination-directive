@@ -1,0 +1,30 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="element in rangeElements(beginElement)">
+      <td>{{element.name}}</td><td>{{element.age}}</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th colspan="2">
+        <pagination-directive begin-element="beginElement"
+                              total-nr-of-pages="{{totalNrOfPages}}"
+                              max-in-list="{{maxInList}}"
+                              total-nr-of-elements="{{totalNrOfElements}}">
+        </pagination-directive>
+      </th>
+    </tr>
+  </tfoot>
+</table>
+
+
+
+
+
+
