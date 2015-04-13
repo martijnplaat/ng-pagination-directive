@@ -7,15 +7,15 @@ This project is an example of a simple pagination directive.
 1. Add pagination-directive.html and pagination-directive.js to your Angular project.
 2. From the controller where you want to use the pagination directive, initialize the following $scope variables:
  
- This variable defines the maximum number of elements you want to show in the table, which is related to the pagination panel
+ Since the pagination panel is related to a table which displays all the elements, this variable defines the maximum number of elements you want to show in the table:
  - `$scope.maxInList = 10`
 
- This variable defines the total number of pages in your navigation panel  
+ This variable defines the total number of pages in your navigation panel:
  - `$scope.totalNrOfPages = 4`
   
  This variable defines the begin element in the related list of elements. This beginElement changes when you click on
  a new navigation page link from the navigation panel. Technically, the pagination directive calculates the new beginElement
- when a new page is requested and returns the outcome back to the controller scope. In this example project we use the rangeElements function, with the $scope.beginElement variable as argument, to recalculate the list of elements we show in the table.
+ when a new page is requested and returns the outcome back to the controller scope. In this example project we use the rangeElements function, with the $scope.beginElement variable as argument, to recalculate the list of elements we show in the table:
 
  - `$scope.beginElement = 0` 
  
