@@ -37,8 +37,6 @@ angular.module('paginationDirectiveApp')
 
 		$scope.rangeElements = function(begin) {
 
-        console.log("nu wel dus");
-
 		    var newListOfElements = [];
 		    var tmpMaxInList = $scope.maxInList;
 
