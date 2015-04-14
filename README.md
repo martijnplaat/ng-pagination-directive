@@ -1,4 +1,4 @@
-# pagination-directive
+# ng-pagination-directive
 
 This project is an example of a simple pagination directive.
 
